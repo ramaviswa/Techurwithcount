@@ -1,0 +1,2 @@
+variable techurrg{}
+variable techurlocation{}
