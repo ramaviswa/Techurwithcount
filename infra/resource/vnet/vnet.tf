@@ -1,4 +1,4 @@
-azurerm_virtual_network  "virtualnetwork" {
+resouce azurerm_virtual_network  "virtualnetwork" {
     count = length(var.vnet.address)
     name = "${var.vnet.name}-${count.index}"
     resource_group_name = var.resourcegroup[count.index].name
