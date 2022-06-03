@@ -1,11 +1,10 @@
 {
     "techurrg":{
-        "count": 5,
-        "name":"resourcegroup"
+        "name": ["amazonrg","flipkartrg"]
     },
     "techurlocation":"Australia Central",
     "techurvnet":{
-        "address":["10.5.0.0/16","10.6.0.0/16","10.7.0.0/16","10.8.0.0/16","10.9.0.0/16"],
-        "name": "virtualnetwork"
+        "address":["10.5.0.0/16","10.6.0.0/16"],
+        "name": ["primevnet","plusvnet"]
     }
 }
