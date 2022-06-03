@@ -27,6 +27,6 @@ module "techurrg" {
 }
 module "techurvnet" {
   source = "./resource/vnet"
-  resourcegroup = module.techurrg.resourcegroup1output
+  rg = module.techurrg.resourcegroup1output
   vnet = var.techurvnet
 }
