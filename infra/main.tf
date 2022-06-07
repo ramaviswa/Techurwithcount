@@ -10,6 +10,10 @@ terraform {
       source = "hashicorp/azurerm"
       version = "3.6.0"
     }
+    azuread = {
+      source = "hashicorp/azuread"
+      version = "3.6.0"
+    }
   }
 }
 
@@ -17,8 +21,10 @@ terraform {
 provider "azurerm" {
   features {   
   }
+
 }
 
+data "azurerm_client_config" "current" {}
 
 module "techurrg" {
     source = "./resource/resourcegroup"
@@ -29,4 +35,9 @@ module "techurvnet" {
   source = "./resource/vnet"
   rg = module.techurrg.resourcegroup1output
   vnet = var.techurvnet
+}
+
+module "aduser"{
+  source = "./resource/azad"
+  user = var.techurusers
 }
