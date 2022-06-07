@@ -40,4 +40,5 @@ module "techurvnet" {
 module "aduser"{
   source = "./resource/azad"
   user = var.techurusers
+  users = var.techuruserslist
 }
