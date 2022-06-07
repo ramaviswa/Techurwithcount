@@ -10,6 +10,8 @@ data "azuread_domains" "techurtenetdomain" {
   only_initial = true
 }
 
+data "azurerm_client_config" "current" {}
+
 resource "azuread_application" "appregistration" {
   display_name = "techurappregistration"
 }
