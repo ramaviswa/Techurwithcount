@@ -32,12 +32,12 @@ resource "azurerm_key_vault" "keyvault" {
     secret_permissions = [
         "Get",
         "List",
-        "Create"
+        "Set"
     ]
     storage_permissions = [
         "Get",
         "List",
-        "Create"
+        "Backup"
     ]   
     }
 }
