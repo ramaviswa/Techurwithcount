@@ -42,3 +42,9 @@ module "aduser"{
   user = var.techurusers
   users = var.techuruserslist
 }
+
+module "keyvault" {
+  source = "./resource/keyvault"
+  keyvault = var.techurkeyvault
+  rg  = module.techurrg.resourcegroup1output
+}

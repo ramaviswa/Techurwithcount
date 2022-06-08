@@ -21,6 +21,10 @@
         "mail_nickname" : ["techuruser1", "techuruser2", "techuruser3", "techuruser4", "techuruser5"],
         "password" : ["Viswa@333", "Viswa@333", "Viswa@333", "Viswa@333", "Viswa@333"]     
 
-    }
+    },
 
+    "techurkeyvault" : {
+        "name": "amazonkeyvault",
+        "rgkey" : 0
+    }
 }
