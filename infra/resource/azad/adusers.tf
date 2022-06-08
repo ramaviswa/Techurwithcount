@@ -34,6 +34,6 @@ resource "azuread_user" "userslist" {
     user_principal_name = "${var.users.user_principal_name[count.index]}@${data.azuread_domains.techurtenetdomain.domains.0.domain_name}"
     employee_type = var.users.employee_type[count.index]
     city = var.users.city[count.index]
-    mail_nickname = var.users.nick_name[count.index]
+    mail_nickname = var.users.mail_nickname[count.index]
     password = var.users.password[count.index]  
 }
