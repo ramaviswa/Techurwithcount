@@ -16,7 +16,7 @@
     "techuruserslist": {
         "display_name" : ["techuruser1", "techuruser2", "techuruser3", "techuruser4","techuruser5"],
         "user_principal_name": ["techuruser1","techuruser2", "techuruser3", "techuruser4", "techuruser5"],
-        "employee_type" : ["permanent", "Contractor", "permanent", "permanent", "Contractor"],
+        "employee_type" : ["Employee", "Contractor", "Employee", "Employee", "Contractor"],
         "city" : ["Hyderabad", "Bangalore", "Chennai", "pune", "mumbai"],
         "mail_nickname" : ["techuruser1", "techuruser2", "techuruser3", "techuruser4", "techuruser5"],
         "password" : ["Viswa@333", "Viswa@333", "Viswa@333", "Viswa@333", "Viswa@333"]     
