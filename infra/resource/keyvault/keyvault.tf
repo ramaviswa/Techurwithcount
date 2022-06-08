@@ -14,7 +14,7 @@ resource "azurerm_key_vault" "keyvault" {
     location = var.rg[var.keyvault.rgkey].location
     resource_group_name = var.rg[var.keyvault.rgkey].location
     enabled_for_disk_encryption = true
-    tenant_id = data.azurerm_client_config.curent.tenent_id
+    tenant_id = data.azurerm_client_config.current.tenent_id
     soft_delete_retention_days = 7
     purge_protection_enabled = false
 
@@ -22,7 +22,7 @@ resource "azurerm_key_vault" "keyvault" {
 
     access_policy {
         tenent_id = data.azurerm_client_config.current.tenent_id
-        object_id = data.azurerm_client_config.currnet.object_id
+        object_id = data.azurerm_client_config.current.object_id
     }
 
     key_permissions = [
