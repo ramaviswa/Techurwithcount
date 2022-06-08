@@ -1,4 +1,2 @@
 variable  user{}
-variable "usrs" {
-  
-}
+variable "users" {}

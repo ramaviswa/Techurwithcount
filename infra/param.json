@@ -19,8 +19,7 @@
         "employee_type" : ["permanent", "contract", "permanent", "permanent", "contract"],
         "city" : ["Hyderabad", "Bangalore", "Chennai", "pune", "mumbai"],
         "nick_name" : ["techuruser1", "techuruser2", "techuruser3", "techuruser4", "techuruser5"],
-        "password" : ["Viswa@333", "Viswa@333", "Viswa@333", "Viswa@333", "Viswa@333"]
-        
+        "password" : ["Viswa@333", "Viswa@333", "Viswa@333", "Viswa@333", "Viswa@333"]     
 
     }
 
