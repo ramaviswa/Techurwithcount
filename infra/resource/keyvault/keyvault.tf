@@ -23,8 +23,7 @@ resource "azurerm_key_vault" "keyvault" {
     access_policy {
         tenent_id = data.azurerm_client_config.current.tenent_id
         object_id = data.azurerm_client_config.current.object_id
-    }
-
+    
     key_permissions = [
         "Get",
         "List",
@@ -40,4 +39,5 @@ resource "azurerm_key_vault" "keyvault" {
         "List",
         "Create"
     ]   
+    }
 }
