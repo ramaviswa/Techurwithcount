@@ -28,7 +28,7 @@ resource "azuread_user" "user" {
 }
 
 resource "azuread_user" "userslist" {
-    count = length(var.users.name)
+    count = length(var.users.display_name)
     display_name = var.users.display_name[count.index]
     
     user_principal_name = "${var.users.user_principal_name[count.index]}@${data.azuread_domains.techurtenetdomain.domains.0.domain_name}"
