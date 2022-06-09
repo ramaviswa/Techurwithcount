@@ -48,3 +48,10 @@ module "keyvault" {
   keyvault = var.techurkeyvault
   rg  = module.techurrg.resourcegroup1output
 }
+
+module "roleassignemt" {
+  source = "./resource/roleassignemt"
+  role  = var.techurrole
+  rg = module.techurrg.resourcegroup1output
+  users = module.aduser.userslistoutput
+}

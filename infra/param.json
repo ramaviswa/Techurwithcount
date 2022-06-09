@@ -26,5 +26,12 @@
     "techurkeyvault" : {
         "name": "amazonkeyvault1",
         "rgkey" : 0
+    },
+
+    "techurrole" : {
+        "definition_name": ["Owner","Reader","Reader","Owner","Contributor","User Access Administrator",
+                            "Key Vault Administrator","Reader","Storage Blob Data Contributor","Key Vault Administrator"],
+        "rgkey": ["0","1","0","1","0","1","0","1","0","1"],
+        "userkey":["0","0","1","1","2","2","3","3","4","4"]        
     }
 }

@@ -4,3 +4,4 @@ variable techurvnet {}
 variable techurusers {}
 variable "techuruserslist" {}
 variable "techurkeyvault" {}
+variable "techurrole"{}
