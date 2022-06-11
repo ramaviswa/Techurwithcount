@@ -29,8 +29,8 @@
         "employee_type" : ["Employee", "Contractor", "Consultant", "Employee", "Consultant"],
         "city" : ["Delhi", "Nagpur", "Noida", "Trivendam", "kolkata"],
         "mail_nickname" : ["techuruser6", "techuruser7","techuruser8", "techuruser9", "techuruser10"],
-        "password" : ["Viswa@333", "Viswa@333", "Viswa@333", "Viswa@333", "Viswa@333"],
-        "preferred_language" : ["Telugu", "Kannada", "Malayalam", "Tamil", "Hindi"]
+        "password" : ["Viswa@333", "Viswa@333", "Viswa@333", "Viswa@333", "Viswa@333"]
+        
     },
 
 
