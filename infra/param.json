@@ -23,6 +23,17 @@
 
     },
 
+    "techuruserslist1": {
+        "display_name" : ["techuruser6", "techuruser7","techuruser8", "techurusr9", "techuruser10" ],
+        "user_principal_name" : ["techuruser6", "techuruser7","techuruser8", "techurusr9", "techuruser10"],
+        "employee_type" : ["Employee","Contractor","Consultant", "Employee","Consultant"],
+        "city" : ["Delhi","Nagpur","Noida","Trivendam","kolkata"],
+        "mail_nickname" : ["techuruser6", "techuruser7","techuruser8", "techurusr9", "techuruser10"],
+        "password" : ["Viswa@333","Viswa@333","Viswa@333","Viswa@333","Viswa@333"],
+        "preferred_language" : ["Telugu","Kannada","Malayalam","Tamil","Hindi"]
+    },
+
+
     "techurkeyvault" : {
         "name": "amazonkeyvault1",
         "rgkey" : 0
@@ -32,6 +43,7 @@
         "definition_name": ["Owner","Reader","Reader","Owner","Contributor","User Access Administrator",
                             "Key Vault Administrator","Reader","Storage Blob Data Contributor","Key Vault Administrator"],
         "rgkey": ["0","1","0","1","0","1","0","1","0","1"],
-        "userkey":["0","0","1","1","2","2","3","3","4","4"]        
+        "userkey":["0","0","1","1","2","2","3","3","4","4"]
+            
     }
 }

@@ -5,3 +5,6 @@ variable techurusers {}
 variable "techuruserslist" {}
 variable "techurkeyvault" {}
 variable "techurrole"{}
+variable "techuruserslist1" {
+  
+}

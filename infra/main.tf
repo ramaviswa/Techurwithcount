@@ -41,7 +41,10 @@ module "aduser"{
   source = "./resource/azad"
   user = var.techurusers
   users = var.techuruserslist
+  userslist = var.techuruserslist1
 }
+
+
 
 module "keyvault" {
   source = "./resource/keyvault"
