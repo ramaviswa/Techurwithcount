@@ -30,7 +30,7 @@ resource "azuread_user" "userslist" {
 resource "azuread_user" "userslist1" {
   count = length(var.userslist.display_name)
   display_name = var.userslist.display_name[count.index]
-  user_principal_name = "${var.userslist.user_principal_name[count.index]}@${data.azuread_domains.techurtenantdomain.domains.0.domain_name}"
+  user_principal_name = "${var.userslist.user_principal_name[count.index]}@${data.azuread_domains.techurtenentdomain.domains.0.domain_name}"
   employee_type =var.userslist.employee_type 
   city = var.userslist.city
   mail_nickname = var.userlist.mail_nickname
