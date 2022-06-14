@@ -36,7 +36,8 @@
 
     "techurkeyvault" : {
         "name": "amazonkeyvault1",
-        "rgkey" : 0
+        "rgkey" : 0,
+        "userskey" : 1
     },
 
     "techurrole" : {
