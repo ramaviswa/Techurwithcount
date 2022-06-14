@@ -48,7 +48,7 @@ resource "azurerm_key_vault_access_policy" "amazonkeyvaultacces" {
     object_id =  var.users[var.keyvault.userkey].object_id 
     key_permissions = ["Get","List","Create"]
  
-    secret_permissions = [ "Get","List","Create" ]
+    secret_permissions = [ "Get","List" , "Set"]
  }
 
    
