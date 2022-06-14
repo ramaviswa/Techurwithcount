@@ -45,7 +45,7 @@ resource "azurerm_key_vault" "keyvault" {
 resource "azurerm_key_vault_access_policy" "amazonkeyvaultacces" {
     key_vault_id = azurerm_key_vault.keyvault.id
     tenant_id = data.azurerm_client_config.current.tenant_id
-    object_id =  var.users[var.role.userkey].object_id 
+    object_id =  var.users[var.keyvault.userkey].object_id 
     key_permissions = ["Get","List","Create"]
  
     secret_permissions = [ "Get","List","Create" ]
