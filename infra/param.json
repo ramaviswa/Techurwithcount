@@ -38,7 +38,7 @@
         "keyname": "amazonkeyvault1",
         "rgkey" : 0,
         "userkey" : 1,
-        "generaekeyname" : "techurkey",
+        "keynamegenerate" : "techurkey",
         "var.type" : "RSA",
         "size" : 2048,
         "opts" : ["decrypt","encrypt", "sign","unwrapKey","verify","wrapKey"]

@@ -6,7 +6,7 @@ variable "techuruserslist" {}
 variable "techurkeyvault" {}
 variable "techurrole"{}
 variable "techuruserslist1" {}
-variable "keyname" {}
+variable "keynamegenerate" {}
 variable "type" {}
 variable "size" {}
 variable "opts" {}
