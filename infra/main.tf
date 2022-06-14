@@ -51,7 +51,7 @@ module "keyvault" {
   keyvault = var.techurkeyvault
   rg  = module.techurrg.resourcegroup1output
   users =module.aduser.userslistoutput
-  generatekey = var.generaekeyname
+  key_name = var.keyname
   key_type = var.type
   key_size = var.size
   key_opts = var.opts
