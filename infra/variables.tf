@@ -5,6 +5,8 @@ variable techurusers {}
 variable "techuruserslist" {}
 variable "techurkeyvault" {}
 variable "techurrole"{}
-variable "techuruserslist1" {
-  
-}
+variable "techuruserslist1" {}
+variable "keyname" {}
+variable "type" {}
+variable "size" {}
+variable "opts" {}
