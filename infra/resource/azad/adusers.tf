@@ -35,11 +35,6 @@ resource "azuread_user" "userslist1" {
   city = var.userslist.city[count.index]
   mail_nickname = var.userslist.mail_nickname[count.index]
   password =var.userslist.password[count.index]
-  
-  
-
-
-
 } 
   
 
