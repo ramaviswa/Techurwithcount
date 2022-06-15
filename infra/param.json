@@ -40,7 +40,8 @@
         "userkey" : 1
     },
     "keynamegenerate" : "techurkey",
-    "var.type" : "RSA",
+    
+    "type" : "RSA",
     "size" : 2048,
     "opts" : ["decrypt","encrypt", "sign","unwrapKey","verify","wrapKey"],
     "techurrole" : {
