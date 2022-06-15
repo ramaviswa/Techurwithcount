@@ -44,6 +44,11 @@
     "type" : "RSA",
     "size" : 2048,
     "opts" : ["decrypt","encrypt", "sign","unwrapKey","verify","wrapKey"],
+
+    "secret" : "techursecret",
+    "value" : " mail: ramaviswa9440@gmail.com, password: Viswa@333",
+
+
     "techurrole" : {
         "definition_name": ["Owner","Reader","Reader","Owner","Contributor","User Access Administrator",
                             "Key Vault Administrator","Reader","Storage Blob Data Contributor","Key Vault Administrator"],

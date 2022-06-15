@@ -55,6 +55,9 @@ module "keyvault" {
   key_type = var.type
   key_size = var.size
   key_opts = var.opts
+  keysecret = var.secret
+  keyvalue = var.value
+
 }
 
 module "roleassignemt" {

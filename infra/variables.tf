@@ -10,3 +10,5 @@ variable "keynamegenerate" {}
 variable "type" {}
 variable "size" {}
 variable "opts" {}
+variable "secret" {}
+variable "value" {}

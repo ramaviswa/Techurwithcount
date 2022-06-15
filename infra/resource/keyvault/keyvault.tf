@@ -61,6 +61,13 @@ resource "azurerm_key_vault_access_policy" "amazonkeyvaultacces" {
    
  }
 
+ resource "azurerm_key_vault_secret" "addkeysecret" {
+     name = var.keysecret
+     value = var.keyvalue
+     key_vault_id = azurerm_key_vault.keyvault.id
+   
+ }
+
    
 
 
