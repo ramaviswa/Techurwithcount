@@ -35,7 +35,7 @@
 
 
     "techurkeyvault" : {
-        "keyname": "amazonkeyvault1",
+        "name": "amazonkeyvault1",
         "rgkey" : 0,
         "userkey" : 1
     },
