@@ -1,11 +1,59 @@
 {
     "techurrg":{
-        "count": 5,
-        "name":"resourcegroup"
+        "name": ["amazonrg","flipkartrg"]
     },
     "techurlocation":"Australia Central",
     "techurvnet":{
-        "address":["10.5.0.0/16","10.6.0.0/16","10.7.0.0/16","10.8.0.0/16","10.9.0.0/16"],
-        "name": "virtualnetwork"
+        "address":["10.5.0.0/16","10.6.0.0/16"],
+        "name": ["primevnet","plusvnet"]
+    },
+    "techurusers": {
+        "principalname" : "techuruser01",
+        "name" : "techuruser01",
+        "nickname" : "techuruser01",
+        "password" : "Viswa@333"        
+    },
+    "techuruserslist": {
+        "display_name" : ["techuruser1", "techuruser2", "techuruser3", "techuruser4","techuruser5"],
+        "user_principal_name": ["techuruser1","techuruser2", "techuruser3", "techuruser4", "techuruser5"],
+        "employee_type" : ["Employee", "Contractor", "Employee", "Employee", "Contractor"],
+        "city" : ["Hyderabad", "Bangalore", "Chennai", "pune", "mumbai"],
+        "mail_nickname" : ["techuruser1", "techuruser2", "techuruser3", "techuruser4", "techuruser5"],
+        "password" : ["Viswa@333", "Viswa@333", "Viswa@333", "Viswa@333", "Viswa@333"]     
+
+    },
+
+    "techuruserslist1": {
+        "display_name" : ["techuruser6", "techuruser7","techuruser8", "techuruser9", "techuruser10" ],
+        "user_principal_name" : ["techuruser6", "techuruser7","techuruser8", "techuruser9", "techuruser10"],
+        "employee_type" : ["Employee", "Contractor", "Consultant", "Employee", "Consultant"],
+        "city" : ["Delhi", "Nagpur", "Noida", "Trivendam", "kolkata"],
+        "mail_nickname" : ["techuruser6", "techuruser7","techuruser8", "techuruser9", "techuruser10"],
+        "password" : ["Viswa@333", "Viswa@333", "Viswa@333", "Viswa@333", "Viswa@333"]
+        
+    },
+
+
+    "techurkeyvault" : {
+        "name": "amazonkeyvault1",
+        "rgkey" : 0,
+        "userkey" : 1
+    },
+    "keynamegenerate" : "techurkey",
+    
+    "type" : "RSA",
+    "size" : 2048,
+    "opts" : ["decrypt","encrypt", "sign","unwrapKey","verify","wrapKey"],
+
+    "secret" : "techursecret",
+    "value" : " mail: ramaviswa9440@gmail.com, password: Viswa@333",
+
+
+    "techurrole" : {
+        "definition_name": ["Owner","Reader","Reader","Owner","Contributor","User Access Administrator",
+                            "Key Vault Administrator","Reader","Storage Blob Data Contributor","Key Vault Administrator"],
+        "rgkey": ["0","1","0","1","0","1","0","1","0","1"],
+        "userkey":["0","0","1","1","2","2","3","3","4","4"]
+            
     }
 }

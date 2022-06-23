@@ -10,6 +10,10 @@ terraform {
       source = "hashicorp/azurerm"
       version = "3.6.0"
     }
+    azuread = {
+      source = "hashicorp/azuread"
+  
+    }
   }
 }
 
@@ -17,8 +21,10 @@ terraform {
 provider "azurerm" {
   features {   
   }
+
 }
 
+data "azurerm_client_config" "current" {}
 
 module "techurrg" {
     source = "./resource/resourcegroup"
@@ -27,6 +33,36 @@ module "techurrg" {
 }
 module "techurvnet" {
   source = "./resource/vnet"
-  resourcegroup = module.techurrg.resourcegroup1output
+  rg = module.techurrg.resourcegroup1output
   vnet = var.techurvnet
+}
+
+module "aduser"{
+  source = "./resource/azad"
+  user = var.techurusers
+  users = var.techuruserslist
+  userslist = var.techuruserslist1
+}
+
+
+
+module "keyvault" {
+  source = "./resource/keyvault"
+  keyvault = var.techurkeyvault
+  rg  = module.techurrg.resourcegroup1output
+  users =module.aduser.userslistoutput
+  keyname = var.keynamegenerate
+  key_type = var.type
+  key_size = var.size
+  key_opts = var.opts
+  keysecret = var.secret
+  keyvalue = var.value
+
+}
+
+module "roleassignemt" {
+  source = "./resource/roleassignment"
+  role  = var.techurrole
+  rg = module.techurrg.resourcegroup1output
+  users = module.aduser.userslistoutput
 }

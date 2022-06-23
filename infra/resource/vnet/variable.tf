@@ -1,2 +1,2 @@
 variable "vnet" {}
-variable "resourcegroup" {}
+variable "rg" {}
